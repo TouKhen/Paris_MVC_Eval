@@ -1,12 +1,12 @@
-#TP Évaluation
+# TP Évaluation
 
 Cette évaluation a pour but d'évaluer votre capacité à concevoir, modéliser et réaliser un projet web à partir d'un cahier des charges.
 
 ### L'entreprise
-*EDEN News* une entreprise de presse souhaite mettre en place une version papier de son journal. Et félicitation tu as décroché le contrat, c'est donc à toi de mener le projet à bien !!!
+*EDEN News* une entreprise de presse souhaitant mettre en place une version numérique de son journal. Après recherche, félicitation tu as décroché le contrat, c'est donc à toi de mener le projet à bien !!!
 
 ### L'objectif du site
-Ton objectif est de réaliser une version numérique du média plus attractive que la version papier.
+Ton objectif est de réaliser une version numérique du média plus attractive que la version papier. Le site doit être fluide, intuitif et fonctionnel.
 
 ### Les cibles
 *EDEN News* est journal pour adolescent, jeunes adultes, adultes, hommes, femmes, animaux de compagnies, dev.
@@ -20,21 +20,21 @@ Le journal impose l'utilisation de la librairie ***Fontawesome*** pour les icôn
 
 <ins>Couleurs:</ins>
 
-***NOIR***: *#3A3A3A;*
+***NOIR*** : *#3A3A3A;*
 
-***BLANC***: *#FFFFFF;*
+***BLANC*** : *#FFFFFF;*
 
-***GRIS***: *#A5A5A5;*
+***GRIS*** : *#A5A5A5;*
 
-***CATÉGORIE 1***: *#5F35AC;*
+***CATÉGORIE 1*** : *#5F35AC;*
 
-***CATÉGORIE 2***: *#F72300;*
+***CATÉGORIE 2*** : *#F72300;*
 
-***CATÉGORIE 3***: *#2196F3;*
+***CATÉGORIE 3*** : *#2196F3;*
 
-***CATÉGORIE 4***: *#FF8400;*
+***CATÉGORIE 4*** : *#FF8400;*
 
-***CATÉGORIE 5***: *#000000;*
+***CATÉGORIE 5*** : *#000000;*
 
 Si vous disposez de plus de 5 catégories vous êtes libre de choisir les couleurs(ex : catégorie 6, 7, etc.).
 
