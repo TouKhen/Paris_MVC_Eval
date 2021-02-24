@@ -8,16 +8,19 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/62c3447164.js" crossorigin="anonymous"></script>
+
+    <!-- CSS pers. -->
     <link rel="stylesheet" href="../public/css/style.css">
 </head>
 <body>
 <div class="container" id="page">
-    <header class="">
-        <div>
+    <!-- Start of header -->
+    <header>
+        <div class="container">
             <!-- Start of .header-trio -->
-            <div class="header-trio">
+            <div class="header-trio row">
                 <!-- .header-trio-left -->
-                <div class="header-trio-left">
+                <div class="header-trio-left col-md-4 col-sm-12">
                     <div class="header-trio-left-top">
                         <p class="title">sunday . 09 august . 2022</p>
                     </div>
@@ -31,16 +34,16 @@
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                             <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
-                            <li><a href="#"><i class="fas fa-wifi" style="transform: rotateZ(45deg)"></i></a></li>
+                            <li><a href="#"><i class="fas fa-rss"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <!-- .header-trio-middle -->
-                <div class="header-trio-middle">
+                <div class="header-trio-middle col-md-4 col-sm-12">
                     <a href="#"><img src="../img/img_site/logo-omega_200x200.png" alt=""></a>
                 </div>
                 <!-- .header-trio-right -->
-                <div class="header-trio-right">
+                <div class="header-trio-right col-md-4 col-sm12">
                     <div class="header-trio-right-top">
                         <p><a href="#">login</a></p>
                         <p>/</p>
@@ -68,7 +71,7 @@
             </div>
             <!-- End of .header-trio -->
         </div>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default general-nav">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -81,55 +84,80 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Brand</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse"
+                <div class="collapse navbar-collapse general-nav-collapse"
                      id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Link <span
+                    <ul class="nav navbar-nav center">
+                        <li class="active"><a href="#">news <span
                                 class="sr-only">(current)</span></a>
                         </li>
-                        <li><a href="#">Link</a></li>
+                        <li><a href="#">mobile</a></li>
+                        <li><a href="#">tablet</a></li>
+                        <li><a href="#">gadgets</a></li>
+                        <li><a href="#">camera</a></li>
+                        <li><a href="#">design</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle"
                                data-toggle="dropdown" role="button"
-                               aria-haspopup="true" aria-expanded="false">Dropdown
-                                <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="navbar-form navbar-left">
-                        <div class="form-group">
-                            <input type="text" class="form-control"
-                                   placeholder="Search">
-                        </div>
-                        <button type="submit" class="btn btn-default">Submit
-                        </button>
-                    </form>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Link</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle"
-                               data-toggle="dropdown" role="button"
-                               aria-haspopup="true" aria-expanded="false">Dropdown
-                                <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
+                               aria-haspopup="true" aria-expanded="false">more
+                                <i class="fas fa-chevron-down fa-xs"></i></a>
+                            <div class="dropdown-menu">
+                                <div>
+                                    <ul>
+                                        <li>widget header</li>
+                                        <li><a href="#">Awesome Features</a>
+                                        </li>
+                                        <li><a href="#">Clean Interface</a></li>
+                                        <li><a href="#">Available
+                                            Possibilities</a></li>
+                                        <li><a href="#">Responsive Design</a>
+                                        </li>
+                                        <li><a href="#">Pixel Perfect
+                                            Graphics</a></li>
+                                    </ul>
+                                    <div class="general-nav-divider"></div>
+                                    <ul>
+                                        <li>widget header</li>
+                                        <li><a href="#">Awesome Features</a>
+                                        </li>
+                                        <li><a href="#">Clean Interface</a></li>
+                                        <li><a href="#">Available
+                                            Possibilities</a></li>
+                                        <li><a href="#">Responsive Design</a>
+                                        </li>
+                                        <li><a href="#">Pixel Perfect
+                                            Graphics</a></li>
+                                    </ul>
+                                    <div class="general-nav-divider"></div>
+                                    <ul>
+                                        <li>widget header</li>
+                                        <li><a href="#">Awesome Features</a>
+                                        </li>
+                                        <li><a href="#">Clean Interface</a></li>
+                                        <li><a href="#">Available
+                                            Possibilities</a></li>
+                                        <li><a href="#">Responsive Design</a>
+                                        </li>
+                                        <li><a href="#">Pixel Perfect
+                                            Graphics</a></li>
+                                    </ul>
+                                    <div class="general-nav-divider"></div>
+                                    <ul>
+                                        <li>widget header</li>
+                                        <li><a href="#">Awesome Features</a>
+                                        </li>
+                                        <li><a href="#">Clean Interface</a></li>
+                                        <li><a href="#">Available
+                                            Possibilities</a></li>
+                                        <li><a href="#">Responsive Design</a>
+                                        </li>
+                                        <li><a href="#">Pixel Perfect
+                                            Graphics</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -137,6 +165,7 @@
 
         </nav>
     </header>
+    <!-- End of header -->
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
