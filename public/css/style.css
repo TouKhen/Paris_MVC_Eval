@@ -768,10 +768,10 @@
   ? Start of responsive
   */
 @media (max-width: 1600px) {
-  .sub-header-right .sub-header-right-top > div, .sub-header-right .sub-header-right-bottom > div {
+  .sub-header-right .sub-header-right-top > div, .sub-header-right .sub-header-right-bottom > div, .sub-header-left > div {
     background-size: 110%;
   }
-  .sub-header-right .sub-header-right-top > div:hover, .sub-header-right .sub-header-right-bottom > div:hover {
+  .sub-header-right .sub-header-right-top > div:hover, .sub-header-right .sub-header-right-bottom > div:hover, .sub-header-left > div:hover {
     background-size: 112%;
   }
 }

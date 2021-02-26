@@ -649,7 +649,7 @@ $text: 'Alegreya Sans', sans-serif;
   */
 
   @media (max-width: 1600px) {
-    .sub-header-right .sub-header-right-top > div , .sub-header-right .sub-header-right-bottom > div{
+    .sub-header-right .sub-header-right-top > div , .sub-header-right .sub-header-right-bottom > div , .sub-header-left > div{
       background-size: 110%;
       &:hover{
         background-size: 112%;
@@ -658,7 +658,7 @@ $text: 'Alegreya Sans', sans-serif;
    }
 
    @media (max-width: 1200px) {
-    .sub-header-right .sub-header-right-top > div , .sub-header-right .sub-header-right-bottom > div, .sub-header-left > div{
+    .sub-header-right .sub-header-right-top > div , .sub-header-right .sub-header-right-bottom > div , .sub-header-left > div{
       background-size: 140%;
       &:hover{
         background-size: 142%;
@@ -667,7 +667,7 @@ $text: 'Alegreya Sans', sans-serif;
    }
    
    @media (max-width: 992px) {
-    .sub-header-right .sub-header-right-top > div , .sub-header-right .sub-header-right-bottom > div, .sub-header-left > div{
+    .sub-header-right .sub-header-right-top > div , .sub-header-right .sub-header-right-bottom > div , .sub-header-left > div{
       background-size: cover !important;
       transition: unset !important;
       &:hover{
