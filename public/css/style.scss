@@ -1,10 +1,10 @@
 /*
  ? FONTS
  */
- @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+$titlelink: 'Roboto', sans-serif;
  /* font-family: 'Roboto', sans-serif; */
  
- @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+$text: 'Alegreya Sans', sans-serif;
  /* font-family: 'Alegreya Sans', sans-serif; */
  
  /*
@@ -36,15 +36,18 @@
  
  .title,
  .lien {
-   font-family: "Roboto", sans-serif;
+   font-family: $titlelink;
    letter-spacing: 1px;
+ }
+
+ .header-trio{
+  margin-bottom: 60px;
  }
  
  .header-trio-left,
  .header-trio-right {
    display: flex;
    flex-direction: column;
-   padding: 0;
    > div {
      min-width: 200px;
      width: fit-content;
@@ -66,6 +69,7 @@
      color: $gray;
      font-weight: 500;
      margin: 0;
+     font-family: $text;
    }
  }
  
@@ -253,7 +257,7 @@
      > a {
        color: $black;
        font-family: "Roboto", sans-serif;
-       font-weight: 600;
+       font-weight: 800;
      }
    }
    .navbar-nav .active > a {
@@ -264,6 +268,7 @@
     left: -1004px;
     width: 1600px;
     padding: 0;
+    margin-top: 15px !important;
      > div {
        width: fit-content;
        display: flex;
@@ -303,6 +308,11 @@
   #page {
     width: 1200px;
   }
+
+  .general-nav .dropdown-menu{
+    left: -804px;
+    width: 1200px;
+  }
  }
  
  @media (max-width: 1200px) {
@@ -322,8 +332,8 @@
   }
 
    .general-nav .dropdown-menu {
-     left: -579px;
-     width: 750px;
+    left: -589px;
+    width: 768px;
    }
  }
  
@@ -368,3 +378,312 @@
   ? End of responsive
   */
  
+  /*
+  * divider *
+ */
+
+ /*
+  ? Start of #sub-header
+ */
+
+ #sub-header {
+  height: 650px;
+}
+
+/*
+ ? Start of #sub-header-left
+*/
+
+.sub-header-left{
+  height: 650px;
+  > div {
+    height: 650px;
+    background-image: url("../../img/img_site/feature-top.jpg");
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    transition: all 0.4s ease-in;
+    &:hover{
+      background-size: 102%;
+    }
+    > div {
+      width: 85%;
+      margin: 0 auto;
+      > div:nth-child(2){
+        background-color: #fff;
+        height: auto;
+        padding: 35px;
+        padding-bottom: 15px;
+        h3 {
+          margin: 0;
+          a {
+            color: $black;
+            font-family: $titlelink;
+          }
+        }
+        p {
+          font-family: $text;
+          margin-top: 10px;
+          font-weight: 600;
+          font-size: 1em;
+        }
+        p:nth-child(3){
+          color: $gray;
+          font-size: 1.2em;
+          font-weight: 500;
+        }
+        > div {
+          display: flex;
+          flex-direction: row;
+          > div {
+            i {
+              color: $white;
+              background-color: $gray;
+              padding: 5px;
+            }
+            a {
+              color: $gray;
+              font-weight: 500;
+              span {
+                color: $black;
+                font-weight: 600;
+                margin-right: 1px;
+              }
+            }
+          }
+          div:nth-child(2){
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+  .category p{
+    font-family: $titlelink;
+    background-color: $category2;
+    color: $white;
+    display: inline-block;
+    padding: 5px 8px;
+    margin-bottom: 0;
+    margin-left: 30px;
+  }
+}
+
+/*
+ ? End of #sub-header-left
+*/
+
+/*
+ ? Start of #sub-header-right
+*/
+
+.sub-header-right{
+  height: 650px;
+  .sub-header-right-top > div {
+    height: 310px;
+    background-image: url("../../img/img_site/feature-static1.jpg");
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    transition: all 0.4s ease-in;
+    &:hover{
+      background-size: 102%;
+    }
+    > div {
+      width: 85%;
+      margin: 0 auto;
+      > div:nth-child(2){
+        background-color: #fff;
+        height: auto;
+        padding: 35px;
+        padding-bottom: 15px;
+        h3 {
+          margin: 0;
+          a {
+            color: $black;
+            font-family: $titlelink;
+          }
+        }
+        p {
+          font-family: $text;
+          margin-top: 10px;
+          font-weight: 600;
+          font-size: 1em;
+        }
+        p:nth-child(3){
+          color: $gray;
+          font-size: 1.2em;
+          font-weight: 500;
+        }
+        > div {
+          display: flex;
+          flex-direction: row;
+          > div {
+            i {
+              color: $white;
+              background-color: $gray;
+              padding: 5px;
+            }
+            a {
+              color: $gray;
+              font-weight: 500;
+              span {
+                color: $black;
+                font-weight: 600;
+                margin-right: 1px;
+              }
+            }
+          }
+          div:nth-child(2){
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+    .category p{
+      font-family: $titlelink;
+      background-color: $category1;
+      color: $white;
+      display: inline-block;
+      padding: 5px 8px;
+      margin-bottom: 0;
+      margin-left: 30px;
+    }
+  }
+
+  .sub-header-right-bottom {
+    margin-top: 30px;
+    > div {
+      height: 310px;
+      background-image: url("../../img/img_site/feature-static2.jpg");
+      background-position: center;
+      background-size: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+      transition: all 0.4s ease-in;
+      &:hover{
+        background-size: 102%;
+      }
+      > div {
+        width: 85%;
+        margin: 0 auto;
+        > div:nth-child(2){
+          background-color: #fff;
+          height: auto;
+          padding: 35px;
+          padding-bottom: 15px;
+          h3 {
+            margin: 0;
+            a {
+              color: $black;
+              font-family: $titlelink;
+            }
+          }
+          p {
+            font-family: $text;
+            margin-top: 10px;
+            font-weight: 600;
+            font-size: 1em;
+          }
+          p:nth-child(3){
+            color: $gray;
+            font-size: 1.2em;
+            font-weight: 500;
+          }
+          > div {
+            display: flex;
+            flex-direction: row;
+            > div {
+              i {
+                color: $white;
+                background-color: $gray;
+                padding: 5px;
+              }
+              a {
+                color: $gray;
+                font-weight: 500;
+                span {
+                  color: $black;
+                  font-weight: 600;
+                  margin-right: 1px;
+                }
+              }
+            }
+            div:nth-child(2){
+              margin-left: 15px;
+            }
+          }
+        }
+      }
+      .category p{
+        font-family: $titlelink;
+        background-color: $category3;
+        color: $white;
+        display: inline-block;
+        padding: 5px 8px;
+        margin-bottom: 0;
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
+/*
+ ? End of #sub-header-right
+*/
+
+/*
+ ? End of #sub-header
+*/
+
+ /*
+  ? Start of responsive
+  */
+
+  @media (max-width: 1600px) {
+    .sub-header-right .sub-header-right-top > div , .sub-header-right .sub-header-right-bottom > div{
+      background-size: 110%;
+      &:hover{
+        background-size: 112%;
+      }
+    }
+   }
+
+   @media (max-width: 1200px) {
+    .sub-header-right .sub-header-right-top > div , .sub-header-right .sub-header-right-bottom > div, .sub-header-left > div{
+      background-size: 140%;
+      &:hover{
+        background-size: 142%;
+      }
+    }
+   }
+   
+   @media (max-width: 992px) {
+    .sub-header-right .sub-header-right-top > div , .sub-header-right .sub-header-right-bottom > div, .sub-header-left > div{
+      background-size: cover !important;
+      transition: unset !important;
+      &:hover{
+        background-size: cover !important;
+      }
+    }
+
+    .sub-header-right-top {
+      margin-top: 30px;
+    }
+   }
+   
+   @media (max-width: 768px) {
+
+   }
+   
+   /*
+    ? End of responsive
+    */
