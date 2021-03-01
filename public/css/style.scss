@@ -321,8 +321,8 @@ $text: 'Alegreya Sans', sans-serif;
   }
 
    .general-nav .dropdown-menu {
-     left: -689px;
-     width: 970px;
+     left: -701px;
+     width: 992px;
    }
  }
  
@@ -335,6 +335,10 @@ $text: 'Alegreya Sans', sans-serif;
     left: -589px;
     width: 768px;
    }
+
+   .general-nav .dropdown-menu > div ul {
+    margin-left: 0;
+  }
  }
  
  @media (max-width: 768px) {
@@ -387,11 +391,11 @@ $text: 'Alegreya Sans', sans-serif;
  */
 
  #sub-header {
-  height: 650px;
+  margin-top: 30px;
 }
 
 /*
- ? Start of #sub-header-left
+ ? Start of .sub-header-left
 */
 
 .sub-header-left{
@@ -417,11 +421,12 @@ $text: 'Alegreya Sans', sans-serif;
         height: auto;
         padding: 35px;
         padding-bottom: 15px;
-        h3 {
+        h2 {
           margin: 0;
           a {
             color: $black;
             font-family: $titlelink;
+            font-weight: 600;
           }
         }
         p {
@@ -473,7 +478,7 @@ $text: 'Alegreya Sans', sans-serif;
 }
 
 /*
- ? End of #sub-header-left
+ ? End of .sub-header-left
 */
 
 /*
@@ -503,11 +508,12 @@ $text: 'Alegreya Sans', sans-serif;
         height: auto;
         padding: 35px;
         padding-bottom: 15px;
-        h3 {
+        h2 {
           margin: 0;
           a {
             color: $black;
             font-family: $titlelink;
+            font-weight: 600;
           }
         }
         p {
@@ -580,11 +586,12 @@ $text: 'Alegreya Sans', sans-serif;
           height: auto;
           padding: 35px;
           padding-bottom: 15px;
-          h3 {
+          h2 {
             margin: 0;
             a {
               color: $black;
               font-family: $titlelink;
+              font-weight: 600;
             }
           }
           p {
@@ -687,3 +694,126 @@ $text: 'Alegreya Sans', sans-serif;
    /*
     ? End of responsive
     */
+
+/*
+ * divider *
+*/
+
+/*
+ ? Start of #home-container
+*/
+
+#home-container {
+  margin-top: 30px;
+  > .col-md-8 {
+    #category-mobile{
+      .cat {
+        background-color: $category1;
+        color: $white;
+        font-family: $titlelink;
+        font-weight: 400;
+        padding: 5px;
+      }
+      > div {
+        margin-left: 15px;
+        &:first-child {
+          margin-bottom: 30px;
+          display: flex;
+          flex-direction: row;
+          a {
+            color: $black;
+            margin: 0;
+            margin-right: 40px;
+            font-size: 1.4em;
+            font-weight: 800;
+            font-family: $titlelink;
+          }
+          div {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-self: flex-end;
+            margin-bottom: 4px;
+            div:nth-child(1) {
+              background-color: $category1;
+              width: 20%;
+              height: 3px;
+            }
+            div:nth-child(2) {
+              background-color: rgba(165, 165, 165, 0.1);
+              width: 80%;
+              height: 3px;
+            }
+          }
+        }
+        &:nth-child(2) {
+          > div {
+            height: 320px;
+            padding-left: 0;
+            padding-right: 30px;
+            &:first-child > div {
+              background-image: url("../../img/img_site/cat-mobi-left-1.jpg");
+              background-position: center;
+              background-size: cover;
+              height: 100%;
+            }
+            &:nth-child(2) {
+              > h2 a {
+                color: $black;
+                font-weight: 600;
+                font-family: $titlelink;
+              }
+              > p {
+                font-weight: 600;
+                &:nth-child(3) {
+                  color: $black;
+                  span {
+                    color: $gray;
+                  }
+                }
+                &:nth-child(4) {
+                  color: $gray;
+                }
+              }
+              > div {
+                display: flex;
+                flex-direction: row;
+                > div {
+                  i {
+                    color: $white;
+                    background-color: $gray;
+                    padding: 5px;
+                  }
+                  a {
+                    color: $gray;
+                    font-weight: 500;
+                    span {
+                      color: $black;
+                      font-weight: 600;
+                      margin-right: 1px;
+                    }
+                  }
+                }
+                > div:nth-child(2) {
+                  margin-left: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+ ? End of #home-container
+*/
+
+/*
+ ? Start of responsive
+*/
+
+/*
+ ? End of responsive
+*/
