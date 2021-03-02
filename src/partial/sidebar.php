@@ -35,6 +35,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="<?= URL ?>dashboard/category"><span data-feather="file-text"></span>Add Category</a>
                 </li>
+								<li class="nav-item">
+									<a class="nav-link" href="<?= URL ?>dashboard/allCategories"><span data-feather="file-text"></span>All Categories</a>
+								</li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?= URL ?>dashboard/allUsers"><span data-feather="file-text"></span>User Management</a>
                 </li>

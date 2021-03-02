@@ -1,10 +1,8 @@
 <?php
     class Dashboard extends Controller {
-
         # **************
         # Add New Post 
         # **************
-        
         public function doAdd() {
             $post = $_POST;
             $category_id = $post['category_id'];
@@ -35,7 +33,6 @@
         # ****************
         # User Management
         # ****************
-
         public function allUsers() {
             $allPermissions = $this->model->getAllPermissions();
             $allUsers = $this->model->getAllUsers();
@@ -66,14 +63,19 @@
         # **********************
         # Category functionality
         # ***********************
-        
         public function category() {
             if(!(Session::get('user'))) {
                 header("Location: " . URL . "home");
             } else { 
                 $this->view->render('dashboard/category');
-
             }
+        }
+	
+	    public function allCategories()
+	    {
+		    $categories = $this->model->getCategories();
+		    $this->view->allCategories = $categories;
+		    $this->view->render('dashboard/allCategories');
         }
 
         public function addCategory() {
@@ -81,11 +83,51 @@
             $this->model->insertCategory($getCategory);
             header("Location: " . URL . "dashboard/category");
         }
+	
+	    public function editCategory($id)
+	    {
+		    if(!(Session::get('user'))) {
+			    Header("Location: " . URL . "home");
+		    } else {
+			    $category = $this->model->getCategoryById($id);
+			    $this->view->category = $category;
+			    $this->view->render('dashboard/editCategory');
+		    }
+	    }
+	
+	    public function updateCategory($id)
+	    {
+		    $post = $_POST;
+		    $category = $this->model->getCategoryById($id);
+		    $post['id'] = $id;
+		    $post['category_name'] = trim($post['category_name']);
+		
+		    if(empty($post['category_name'])) {
+			    $this->view->cat_err = 'Please fill out the complete form';
+			    return $this->editCategory($id);
+		    }
+		    
+		    $this->view->category = $post;
+		    $this->model->updateCategory($post);
+		    
+		    Message::add('Category updated');
+		    
+		    header("Location: " . URL . "dashboard/allCategories");
+	    }
+	
+	    public function deleteCategory($id)
+	    {
+		    $post = $this->model->getCategoryById($id);
+		    $this->model->deleteCategory($id);
+		
+		    Message::add($post->category_name . ' category successfully deleted', 'danger');
+		    
+		    header('Location: ' . URL . 'dashboard');
+	    }
 
         # ******************
         # Edit User Profile
         # ******************
-
         public function editProfile() {
             if(!(Session::get('user'))) {
                 Header("Location: " . URL . "home");
@@ -142,7 +184,6 @@
         # *************************************
         # CRUD Functionality for View Posts 
         # *************************************
-
         public function view() {
             if(!(Session::get('user'))) {
                 Header("Location: " . URL . "home");

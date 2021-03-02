@@ -118,42 +118,25 @@
 							<li class="active">
 								<a class="nav-link <?= (Session::get('controller_name') == 'Home') ? 'active' : '' ?>" href="<?= URL ?>home">News</a>
 							</li>
-							<li><a href="<?= URL ?>category/showCategory/mobile">Mobile</a></li>
-							<li><a href="<?= URL ?>category/showCategory/tablet">Tablet</a></li>
-							<li><a href="<?= URL ?>category/showCategory/gadget">Gadgets</a></li>
-							<li><a href="<?= URL ?>category/showCategory/camera">Camera</a></li>
-							<li><a href="<?= URL ?>category/showCategory/design">Design</a></li>
 							<li class="dropdown m-menu-fw">
 								<a href="#" data-toggle="dropdown" class="dropdown-toggle">
-									More<span><i class="fa fa-angle-down"></i></span>
+									Categories<span><i class="fa fa-angle-down"></i></span>
 								</a>
 								<ul class="dropdown-menu">
 									<li>
 										<div class="m-menu-content">
 											<?php foreach($categories as $key => $value) : ?>
-												<ul class="col-sm-3">
-													<li class="dropdown-header">Widget Header</li>
-													<li>
-														<a href="<?= URL ?>category/showCategory/<?= $key ?>"><?= $value ?></a>
-													</li>
-													<li>
-														<a href="<?= URL ?>category/showCategory/<?= $key ?>"><?= $value ?></a>
-													</li>
-													<li>
-														<a href="<?= URL ?>category/showCategory/<?= $key ?>"><?= $value ?></a>
-													</li>
-													<li>
-														<a href="<?= URL ?>category/showCategory/<?= $key ?>"><?= $value ?></a>
-													</li>
-													<li>
-														<a href="<?= URL ?>category/showCategory/<?= $key ?>"><?= $value ?></a>
-													</li>
+												<ul class="col-sm-2">
+													<li class="dropdown-header"><a href="<?= URL ?>category/showCategory/<?= $key ?>"><?= $value ?></a></li>
 												</ul>
 											<?php endforeach; ?>
 										</div>
 									</li>
 								</ul>
 							</li>
+							<li><a class="<?= (Session::get('controller_name') == 'Author') ? 'active' : '' ?>" href="<?= URL ?>author">Authors</a></li>
+							<li><a class="<?= (Session::get('controller_name') == 'Gallery') ? 'active' : '' ?>" href="<?= URL ?>gallery">Gallery</a></li>
+							<li><a class="<?= (Session::get('controller_name') == 'Contact') ? 'active' : '' ?>" href="<?= URL ?>contact">Contact</a></li>
 						</ul>
 					</div>
 					<!-- .navbar-collapse -->

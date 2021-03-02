@@ -1,6 +1,5 @@
 <?php
     class Category_Model extends Model {
-
         public function getPosts() {
             $sql = 'SELECT user.firstname, user.lastname, file.image, file.thumb, category.category_name, posts.*
                     FROM user

@@ -82,26 +82,6 @@
             return $result;
         }
 
-        // public function updateUser($user) {
-        //     $password = $user['password'];
-        //     $hashPassword = password_hash($password, PASSWORD_DEFAULT);
-        //     $user['password'] = $hashPassword;
-
-        //     $sql = "UPDATE user SET firstname = :firstname, lastname = :lastname, email = :email, password = :password WHERE id = :id";
-        //     $obj = $this->db->prepare($sql);
-
-        //     $obj->execute(array(
-        //         ":firstname" => $user['firstname'],
-        //         ":lastname" => $user['lastname'],
-        //         ":email" => $user['email'],
-        //         ":email" => $user['email'],
-        //         ":password" => $user['password'],
-        //         ":id" => Session::get('user')['id']
-        //     ));
-
-        // }
-
-
         public function editProfile($user_id, $post_firstname, $post_lastname, $post_email, $post_password) {
 
             $sql = "UPDATE user SET firstname = :firstname, lastname = :lastname, email = :email WHERE id = :id";
@@ -275,6 +255,23 @@
     
             return false;
         }
+	
+	    public function getCategoryById($id) {
+		    $sql = "SELECT * FROM category WHERE id = :id";
+		
+		    $obj = $this->db->prepare($sql);
+		
+		    $obj->execute(array(
+			    ":id" => $id
+		    ));
+		
+		    if($obj->rowCount() > 0) {
+			    $data = $obj->fetchAll(PDO::FETCH_OBJ);
+			    return $data;
+		    }
+		
+		    return false;
+	    }
 
         public function insertCategory($categoryName) {
             $sql = "INSERT INTO category(category_name) VALUES (:category_name)";
@@ -291,6 +288,16 @@
     
             return false;
         }
+	
+	    public function updateCategory($data)
+	    {
+		    $sql = 'UPDATE category SET category_name = :category_name WHERE id = :id';
+		    $obj = $this->db->prepare($sql);
+		    $obj->execute(array(
+			    ":id" => $data["id"],
+			    ":category_name" => $data["category_name"]
+		    ));
+	    }
 
         public function getAllUsers() {
             $sql = 'SELECT user.*, user_permission.permission FROM user LEFT JOIN user_permission ON permission_id = user_permission.id ORDER BY user.email ASC';
@@ -379,5 +386,15 @@
     
             return $result;
         }
-
+        
+	    public function deleteCategory($id)
+	    {
+		    $sql = 'DELETE FROM category WHERE id = :id LIMIT 1';
+		    $obj = $this->db->prepare($sql);
+		    $result = $obj->execute(array(
+			    ':id' => $id
+		    ));
+		
+		    return $result;
+	    }
     }

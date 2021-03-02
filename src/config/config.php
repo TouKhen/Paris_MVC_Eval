@@ -1,7 +1,7 @@
 <?php
 //---------------------------------------------------------
 // Debug ?
-define('DEBUG_MODE', false);
+define('DEBUG_MODE', true);
 //---------------------------------------------------------
 // Database parameters
 define('DB_TYPE', 'mysql');

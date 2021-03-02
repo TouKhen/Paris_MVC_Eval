@@ -21,56 +21,58 @@
 ?>
 
 <section>
-<div class="row">
-    <div class="col-md-8 mx-auto">
-        <div class="card card-body bg-light mt-5">
-            <h2>Create An Account</h2>
-            <p>Please fill out this form to register with us</p>
-            <form action="<?php echo URL; ?>auth/doRegister" method="POST" name="myForm">
-
-                <div class="form-group">
-                    <label for="firstname">Name: <sup>*</sup></label>
-                    <input type="text" id="firstname" name="firstname" class="form-control form-control-lg <?= $firstnameErr ?>"  value="<?= $firstnameData ?>">
-                    <span class="invalid-feedback"><?= $nameErrorMsg ?></span>
-                </div>
- 
-
-                <div class="form-group">
-                    <label for="name">Last Name: <sup>*</sup></label>
-                    <input type="text" id="lastname" name="lastname" class="form-control form-control-lg <?= $lastNameErr ?>"  value="<?= $lastnameData ?>">
-                    <span class="invalid-feedback"><?= $lastNameErrorMsg ?></span>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email: <sup>*</sup></label>
-                    <input type="text" id="email" name="email" class="form-control form-control-lg <?= $emailErr ?>" value="<?= $emailData ?>">
-                    <span class="invalid-feedback"><?= $emailErrorMsg ?></span>
-                </div>        
-                
-
-                <div class="form-group">
-                    <label for="name">Password: <sup>*</sup></label>
-                    <input type="password" id="password" name="password" class="form-control form-control-lg <?= $passwordErr ?>" value="<?= $passwordData ?>">
-                    <span class="invalid-feedback"><?= $passwordErrorMsg ?></span>
-                </div>
-
-                <div class="form-group">
-                    <label for="confirm_password">Confirm Password: <sup>*</sup></label>
-                    <input type="password" id="confirm_password" name="confirm_password" class="form-control form-control-lg <?= $confirmPasswordErr ?>" value="<?= $confirmPasswordData ?>">
-                    <span class="invalid-feedback"><?= $confirmPasswordErrorMsg ?></span>
-                </div>  
-
-                <div class="row">
-                    <div class="col">
-                    <input type="submit" value="Register" class="btn btn-success btn-block">
-                    </div>
-                    <div class="col">
-                    <a href="<?php echo URL; ?>auth/login" class="btn btn-light btn-block">Have an account? Login</a>
-                    </div>
-                </div>       
-            </form>
-        </div>
-    </div>
-</div>
+	<div class="container">
+		<div class="row">
+			<div class="col mx-auto">
+				<div class="card card-body bg-light mt-5">
+					<h2>Create An Account</h2>
+					<p>Please fill out this form to register with us</p>
+					<form action="<?php echo URL; ?>auth/doRegister" method="POST" name="myForm">
+						
+						<div class="form-group">
+							<label for="firstname">Firstname: <sup>*</sup></label>
+							<input type="text" id="firstname" name="firstname" class="form-control form-control-lg <?= $firstnameErr ?>"  value="<?= $firstnameData ?>">
+							<span class="invalid-feedback"><?= $nameErrorMsg ?></span>
+						</div>
+						
+						
+						<div class="form-group">
+							<label for="name">Lastname: <sup>*</sup></label>
+							<input type="text" id="lastname" name="lastname" class="form-control form-control-lg <?= $lastNameErr ?>"  value="<?= $lastnameData ?>">
+							<span class="invalid-feedback"><?= $lastNameErrorMsg ?></span>
+						</div>
+						
+						<div class="form-group">
+							<label for="email">Email: <sup>*</sup></label>
+							<input type="text" id="email" name="email" class="form-control form-control-lg <?= $emailErr ?>" value="<?= $emailData ?>">
+							<span class="invalid-feedback"><?= $emailErrorMsg ?></span>
+						</div>
+						
+						
+						<div class="form-group">
+							<label for="name">Password: <sup>*</sup></label>
+							<input type="password" id="password" name="password" class="form-control form-control-lg <?= $passwordErr ?>" value="<?= $passwordData ?>">
+							<span class="invalid-feedback"><?= $passwordErrorMsg ?></span>
+						</div>
+						
+						<div class="form-group">
+							<label for="confirm_password">Confirm Password: <sup>*</sup></label>
+							<input type="password" id="confirm_password" name="confirm_password" class="form-control form-control-lg <?= $confirmPasswordErr ?>" value="<?= $confirmPasswordData ?>">
+							<span class="invalid-feedback"><?= $confirmPasswordErrorMsg ?></span>
+						</div>
+						
+						<div class="row">
+							<div class="col">
+								<input type="submit" value="Register" class="btn btn-success btn-block">
+							</div>
+							<div class="col">
+								<a href="<?php echo URL; ?>auth/login" class="btn btn-light btn-block">Have an account? Login</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 <div class="mb-5"></div>
