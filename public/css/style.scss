@@ -23,10 +23,22 @@ $text: 'Alegreya Sans', sans-serif;
  #page {
    margin-top: 40px;
    width: 1600px;
+   > .row {
+     > div:first-child {
+       padding-left: 0;
+     }
+     div:nth-child(2) {
+       padding-right: 0;
+     }
+   }
  }
  
  * {
    box-sizing: border-box;
+ }
+
+ .w-100 {
+   width: 100%;
  }
  
  .container,
@@ -39,6 +51,15 @@ $text: 'Alegreya Sans', sans-serif;
    font-family: $titlelink;
    letter-spacing: 1px;
  }
+
+ header {
+   margin-left: 0;
+   margin-right: 0;
+ }
+
+ /*
+  ? Start of .header-trio
+ */
 
  .header-trio{
   margin-bottom: 60px;
@@ -229,6 +250,10 @@ $text: 'Alegreya Sans', sans-serif;
  /*
   ? End of .header-trio-right
  */
+
+ /*
+  ? End of .header-trio
+ */
  
  /*
   ? Start of .general-nav
@@ -265,8 +290,8 @@ $text: 'Alegreya Sans', sans-serif;
      background-color: $white;
    }
    .dropdown-menu {
-    left: -1004px;
-    width: 1600px;
+    left: -1009px;
+    width: 1630px;
     padding: 0;
     margin-top: 15px !important;
      > div {
@@ -307,10 +332,12 @@ $text: 'Alegreya Sans', sans-serif;
  @media (max-width: 1600px) {
   #page {
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .general-nav .dropdown-menu{
-    left: -804px;
+    left: -794px;
     width: 1200px;
   }
  }
@@ -318,22 +345,40 @@ $text: 'Alegreya Sans', sans-serif;
  @media (max-width: 1200px) {
   #page {
     width: 992px;
+    padding-left: 15px;
+    padding-right: 15px;
+    > .row {
+      margin-right: 0;
+      margin-left: 0;
+    }
   }
 
    .general-nav .dropdown-menu {
-     left: -701px;
-     width: 992px;
+    left: -674px;
+    width: 961px;
    }
  }
  
  @media (max-width: 992px) {
   #page {
     width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+    > .row {
+      margin-right: 0;
+      margin-left: 0;
+      > div:first-child {
+        padding-right: 0;
+      }
+      > div:nth-child(2) {
+        padding-left: 0;
+      }
+    }
   }
 
    .general-nav .dropdown-menu {
-    left: -589px;
-    width: 768px;
+    left: -563px;
+    width: 738px;
    }
 
    .general-nav .dropdown-menu > div ul {
@@ -344,6 +389,12 @@ $text: 'Alegreya Sans', sans-serif;
  @media (max-width: 768px) {
   #page {
     width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    > .row {
+      margin-right: 0;
+      margin-left: 0;
+    }
   }
 
    .container {
@@ -419,8 +470,8 @@ $text: 'Alegreya Sans', sans-serif;
       > div:nth-child(2){
         background-color: #fff;
         height: auto;
-        padding: 35px;
-        padding-bottom: 15px;
+        padding: 35px !important;
+        padding-bottom: 15px !important;
         h2 {
           margin: 0;
           a {
@@ -447,7 +498,7 @@ $text: 'Alegreya Sans', sans-serif;
             i {
               color: $white;
               background-color: $gray;
-              padding: 5px;
+              padding: 6px;
             }
             a {
               color: $gray;
@@ -506,8 +557,8 @@ $text: 'Alegreya Sans', sans-serif;
       > div:nth-child(2){
         background-color: #fff;
         height: auto;
-        padding: 35px;
-        padding-bottom: 15px;
+        padding: 35px !important;
+        padding-bottom: 15px !important;
         h2 {
           margin: 0;
           a {
@@ -584,8 +635,8 @@ $text: 'Alegreya Sans', sans-serif;
         > div:nth-child(2){
           background-color: #fff;
           height: auto;
-          padding: 35px;
-          padding-bottom: 15px;
+          padding: 35px !important;
+          padding-bottom: 15px !important;
           h2 {
             margin: 0;
             a {
@@ -706,46 +757,59 @@ $text: 'Alegreya Sans', sans-serif;
 #home-container {
   margin-top: 30px;
   > .col-md-8 {
-    #category-mobile{
+    .categories{
       .cat {
-        background-color: $category1;
         color: $white;
         font-family: $titlelink;
         font-weight: 400;
         padding: 5px;
       }
-      > div {
-        margin-left: 15px;
-        &:first-child {
-          margin-bottom: 30px;
+      .category-divider {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        a {
+          color: $black;
+          margin: 0;
+          margin-right: 40px;
+          font-size: 1.4em;
+          font-weight: 800;
+          font-family: $titlelink;
+          min-width: fit-content;
+        }
+        div {
+          width: 100%;
           display: flex;
           flex-direction: row;
-          a {
-            color: $black;
-            margin: 0;
-            margin-right: 40px;
-            font-size: 1.4em;
-            font-weight: 800;
-            font-family: $titlelink;
+          align-self: flex-end;
+          margin-bottom: 4px;
+          div:nth-child(1) {
+            width: 20%;
+            height: 3px;
           }
-          div {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            align-self: flex-end;
-            margin-bottom: 4px;
-            div:nth-child(1) {
-              background-color: $category1;
-              width: 20%;
-              height: 3px;
-            }
-            div:nth-child(2) {
-              background-color: rgba(165, 165, 165, 0.1);
-              width: 80%;
-              height: 3px;
-            }
+          div:nth-child(2) {
+            background-color: rgba(165, 165, 165, 0.1);
+            width: 80%;
+            height: 3px;
           }
         }
+      }
+    }
+
+    #category-one{
+      .cat {
+        background-color: $category1;
+      }
+      .category-divider {
+        div {
+          div:nth-child(1) {
+            background-color: $category1;
+          }
+        }
+      }
+      > div {
+        margin-left: 15px;
+        margin-right: 15px;
         &:nth-child(2) {
           > div {
             height: 320px;
@@ -765,6 +829,8 @@ $text: 'Alegreya Sans', sans-serif;
               }
               > p {
                 font-weight: 600;
+                font-family: $text;
+                font-size: 1.2em;
                 &:nth-child(3) {
                   color: $black;
                   span {
@@ -787,6 +853,9 @@ $text: 'Alegreya Sans', sans-serif;
                   a {
                     color: $gray;
                     font-weight: 500;
+                    font-family: $titlelink;
+                    font-size: 0.9em;
+                    margin-left: 10px;
                     span {
                       color: $black;
                       font-weight: 600;
@@ -802,6 +871,146 @@ $text: 'Alegreya Sans', sans-serif;
           }
         }
       }
+      .big-card > div:nth-child(2){
+        height: unset;
+      }
+      .small-cards {
+        > div {
+          > div:first-child {
+            margin-bottom: 20px;
+          }
+        }
+        .small-cards-1 {
+          .col-md-4 {
+            padding: 0;
+            > div {
+              background-image: url("../../img/img_site/cat-mobi-sm1.jpg");
+              height: 140px;
+              background-size: cover;
+              background-position: center;
+            }
+          }
+        }
+        .small-cards-2 {
+          .col-md-4 {
+            padding: 0;
+            > div {
+              background-image: url("../../img/img_site/cat-mobi-sm2.jpg");
+              height: 140px;
+              background-size: cover;
+              background-position: center;
+            }
+          }
+        }
+        .small-cards-3 {
+          .col-md-4 {
+            padding: 0;
+            > div {
+              background-image: url("../../img/img_site/cat-mobi-sm3.jpg");
+              height: 140px;
+              background-size: cover;
+              background-position: center;
+            }
+          }
+        }
+        .small-cards-4 {
+          .col-md-4 {
+            padding: 0;
+            > div {
+              background-image: url("../../img/img_site/cat-mobi-sm4.jpg");
+              height: 140px;
+              background-size: cover;
+              background-position: center;
+            }
+          }
+        }
+        margin-top: 70px;
+        .col-md-8 {
+          > h2 {
+            font-size: 1.1em;
+            a {
+              color: $black;
+              font-weight: 600;
+              font-family: $titlelink;
+            }
+          }
+          > p {
+            font-weight: 600;
+            font-family: $text;
+            font-size: 1.1em;
+            &:nth-child(3) {
+              color: $black;
+              span {
+                color: $gray;
+              }
+            }
+          }
+          > div {
+            display: flex;
+            flex-direction: row;
+            > div {
+              i {
+                color: $white;
+                background-color: $gray;
+                padding: 5px;
+              }
+              a {
+                color: $gray;
+                font-weight: 500;
+                font-family: $titlelink;
+                font-size: 0.9em;
+                margin-left: 10px;
+                span {
+                  color: $black;
+                  font-weight: 600;
+                  margin-right: 1px;
+                }
+              }
+            }
+            > div:nth-child(2) {
+              margin-left: 15px;
+            }
+          }
+        }
+      }
+      > .row:nth-child(4) {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-end;
+        margin-top: 60px;
+        margin-bottom: 50px;
+        > div {
+          background-color: rgba(165, 165, 165, 0.1);
+          width: 85%;
+          height: 2px;
+          margin-right: auto;
+          margin-bottom: 4px;
+          align-self: flex-end;
+        }
+        > a {
+          margin-left: -115px;
+          color: $black;
+          font-family: $titlelink;
+          font-weight: 600;
+        }
+      }
+    }
+
+    #category-two{
+      .cat {
+        background-color: $category2;
+      }
+      .category-divider {
+        div {
+          div:nth-child(1) {
+            background-color: $category2;
+          }
+        }
+      }
+      > div {
+        margin-left: 15px;
+        margin-right: 15px;
+      }
     }
   }
 }
@@ -814,6 +1023,33 @@ $text: 'Alegreya Sans', sans-serif;
  ? Start of responsive
 */
 
+@media (max-width: 992px) {
+  #home-container {
+     > .col-md-8 #category-one > div:nth-child(2) > div {
+      padding-right: 0px;
+     }  
+  }
+}
+
 /*
  ? End of responsive
+*/
+
+/*
+ * divider *
+*/
+
+/*
+ ? Start of footer
+*/
+
+footer {
+  > div:nth-child(2) {
+    background-color: $black;
+    height: 2px;
+  }
+}
+
+/*
+ ? End of footer
 */

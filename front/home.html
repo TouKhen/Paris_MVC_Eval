@@ -1,284 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>EDEN News</title>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/62c3447164.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 
     <!-- CSS pers. -->
     <link rel="stylesheet" href="../public/css/style.css">
 
     <!-- Fonts -->
     <link
-    href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-<!-- #page -->
-<div class="container" id="page">
-    <!-- header -->
-    <header class="row">
-        <div class="container-fluid">
-            <!-- .header-trio -->
-            <div class="header-trio row">
-                <!-- .header-trio-left -->
-                <div class="header-trio-left col-md-4 col-sm-12">
-                    <div>
-                        <div class="header-trio-left-top">
-                            <p class="title" id="time">loading date</p>
-                        </div>
-                        <div class="header-trio-left-middle">
-                            <div class="header-trio-left-middle-left"></div>
-                            <div class="header-trio-left-middle-right"></div>
-                        </div>
-                        <div class="header-trio-left-bottom">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
-                                <li><a href="#"><i class="fas fa-rss"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- .header-trio-middle -->
-                <div class="header-trio-middle col-md-4 col-sm-12">
-                    <a href="#"><img src="../img/img_site/logo-omega_200x200.png" alt="Logo Omega"></a>
-                </div>
-                <!-- .header-trio-right -->
-                <div class="header-trio-right col-md-4 col-sm12">
-                    <div class="header-trio-right-top">
-                        <p><a href="#">login</a></p>
-                        <p>/</p>
-                        <p><a href="#">register</a></p>
-                        <!-- Small button group -->
-                        <div class="btn-group">
-                            <button class="dropdown-toggle"
-                                    type="button" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
-                                EN <i class="fas fa-chevron-down fa-xs"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <a href="#">FR</a>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="header-trio-right-middle">
-                        <div class="header-trio-right-middle-left"></div>
-                        <div class="header-trio-right-middle-right"></div>
-                    </div>
-                    <div class="header-trio-right-bottom">
-                        <p><i class="fas fa-search"></i></p>
-                    </div>
-                </div>
-            </div>
-            <!-- End of .header-trio -->
-        </div>
-        <nav class="navbar navbar-default general-nav">
+    <!-- #page -->
+    <div class="container" id="page">
+        <!-- header -->
+        <header class="row">
             <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed"
-                            data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1"
-                            aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse general-nav-collapse"
-                     id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav center">
-                        <li class="active"><a href="#">news <span
-                                class="sr-only">(current)</span></a>
-                        </li>
-                        <li><a href="#">mobile</a></li>
-                        <li><a href="#">tablet</a></li>
-                        <li><a href="#">gadgets</a></li>
-                        <li><a href="#">camera</a></li>
-                        <li><a href="#">design</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle"
-                               data-toggle="dropdown" role="button"
-                               aria-haspopup="true" aria-expanded="false">more
-                                <i class="fas fa-chevron-down fa-xs"></i></a>
-                            <div class="dropdown-menu">
-                                <div>
-                                    <ul>
-                                        <li>widget header</li>
-                                        <li><a href="#">Awesome Features</a>
-                                        </li>
-                                        <li><a href="#">Clean Interface</a></li>
-                                        <li><a href="#">Available
-                                            Possibilities</a></li>
-                                        <li><a href="#">Responsive Design</a>
-                                        </li>
-                                        <li><a href="#">Pixel Perfect
-                                            Graphics</a></li>
-                                    </ul>
-                                    <div class="general-nav-divider"></div>
-                                    <ul>
-                                        <li>widget header</li>
-                                        <li><a href="#">Awesome Features</a>
-                                        </li>
-                                        <li><a href="#">Clean Interface</a></li>
-                                        <li><a href="#">Available
-                                            Possibilities</a></li>
-                                        <li><a href="#">Responsive Design</a>
-                                        </li>
-                                        <li><a href="#">Pixel Perfect
-                                            Graphics</a></li>
-                                    </ul>
-                                    <div class="general-nav-divider"></div>
-                                    <ul>
-                                        <li>widget header</li>
-                                        <li><a href="#">Awesome Features</a>
-                                        </li>
-                                        <li><a href="#">Clean Interface</a></li>
-                                        <li><a href="#">Available
-                                            Possibilities</a></li>
-                                        <li><a href="#">Responsive Design</a>
-                                        </li>
-                                        <li><a href="#">Pixel Perfect
-                                            Graphics</a></li>
-                                    </ul>
-                                    <div class="general-nav-divider"></div>
-                                    <ul>
-                                        <li>widget header</li>
-                                        <li><a href="#">Awesome Features</a>
-                                        </li>
-                                        <li><a href="#">Clean Interface</a></li>
-                                        <li><a href="#">Available
-                                            Possibilities</a></li>
-                                        <li><a href="#">Responsive Design</a>
-                                        </li>
-                                        <li><a href="#">Pixel Perfect
-                                            Graphics</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-
-        </nav>
-    </header>
-    <!-- header -->
-    <!-- ? divider ? -->
-    <!-- #sub-header -->
-    <section class="row" id="sub-header">
-        <!-- .sub-header-left -->
-        <div class="col-md-7 sub-header-left">
-            <div>
-                <div>
-                    <div class="category">
-                        <p>HOT NEWS</p>
-                    </div>
-                    <div>
-                        <h2><a href="#">Chevrolet car-saving technology delivers</a></h2>
-                        <p>Stive Clark.Aug 4, 2015</p>
-                        <p>In a move to address mounting concerns about security on Android, Google and Samsung are now issuing.</p>
+                <!-- .header-trio -->
+                <div class="header-trio row">
+                    <!-- .header-trio-left -->
+                    <div class="header-trio-left col-md-4 col-sm-12">
                         <div>
-                            <div>
-                                <i class="fas fa-share-alt fa-xs"></i>
-                                <a href="#"><span>424</span> Shares</a>
+                            <div class="header-trio-left-top">
+                                <p class="title" id="time">loading date</p>
                             </div>
+                            <div class="header-trio-left-middle">
+                                <div class="header-trio-left-middle-left"></div>
+                                <div class="header-trio-left-middle-right"></div>
+                            </div>
+                            <div class="header-trio-left-bottom">
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-rss"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .header-trio-middle -->
+                    <div class="header-trio-middle col-md-4 col-sm-12">
+                        <a href="#"><img src="../img/img_site/logo-omega_200x200.png" alt="Logo Omega"></a>
+                    </div>
+                    <!-- .header-trio-right -->
+                    <div class="header-trio-right col-md-4 col-sm12">
+                        <div class="header-trio-right-top">
+                            <p><a href="#">login</a></p>
+                            <p>/</p>
+                            <p><a href="#">register</a></p>
+                            <!-- Small button group -->
+                            <div class="btn-group">
+                                <button class="dropdown-toggle" type="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    EN <i class="fas fa-chevron-down fa-xs"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <a href="#">FR</a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-trio-right-middle">
+                            <div class="header-trio-right-middle-left"></div>
+                            <div class="header-trio-right-middle-right"></div>
+                        </div>
+                        <div class="header-trio-right-bottom">
+                            <p><i class="fas fa-search"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of .header-trio -->
+            </div>
+            <nav class="navbar navbar-default general-nav">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse general-nav-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav center">
+                            <li class="active"><a href="#">News <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li><a href="#">Catégories</a></li>
+                            <li><a href="#">Auteurs</a></li>
+                            <li><a href="#">Galerie</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <!-- <li><a href="#">test</a></li> -->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">more
+                                    <i class="fas fa-chevron-down fa-xs"></i></a>
+                                <div class="dropdown-menu">
+                                    <div>
+                                        <ul>
+                                            <li>widget header</li>
+                                            <li><a href="#">Awesome Features</a>
+                                            </li>
+                                            <li><a href="#">Clean Interface</a></li>
+                                            <li><a href="#">Available
+                                                    Possibilities</a></li>
+                                            <li><a href="#">Responsive Design</a>
+                                            </li>
+                                            <li><a href="#">Pixel Perfect
+                                                    Graphics</a></li>
+                                        </ul>
+                                        <div class="general-nav-divider"></div>
+                                        <ul>
+                                            <li>widget header</li>
+                                            <li><a href="#">Awesome Features</a>
+                                            </li>
+                                            <li><a href="#">Clean Interface</a></li>
+                                            <li><a href="#">Available
+                                                    Possibilities</a></li>
+                                            <li><a href="#">Responsive Design</a>
+                                            </li>
+                                            <li><a href="#">Pixel Perfect
+                                                    Graphics</a></li>
+                                        </ul>
+                                        <div class="general-nav-divider"></div>
+                                        <ul>
+                                            <li>widget header</li>
+                                            <li><a href="#">Awesome Features</a>
+                                            </li>
+                                            <li><a href="#">Clean Interface</a></li>
+                                            <li><a href="#">Available
+                                                    Possibilities</a></li>
+                                            <li><a href="#">Responsive Design</a>
+                                            </li>
+                                            <li><a href="#">Pixel Perfect
+                                                    Graphics</a></li>
+                                        </ul>
+                                        <div class="general-nav-divider"></div>
+                                        <ul>
+                                            <li>widget header</li>
+                                            <li><a href="#">Awesome Features</a>
+                                            </li>
+                                            <li><a href="#">Clean Interface</a></li>
+                                            <li><a href="#">Available
+                                                    Possibilities</a></li>
+                                            <li><a href="#">Responsive Design</a>
+                                            </li>
+                                            <li><a href="#">Pixel Perfect
+                                                    Graphics</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+
+            </nav>
+        </header>
+        <!-- header -->
+        <!-- ? divider ? -->
+        <!-- #sub-header -->
+        <section class="row" id="sub-header">
+            <!-- .sub-header-left -->
+            <div class="col-md-7 sub-header-left">
+                <div>
+                    <div>
+                        <div class="category">
+                            <p>HOT NEWS</p>
+                        </div>
+                        <div>
+                            <h2><a href="#">Chevrolet car-saving technology delivers</a></h2>
+                            <p>Stive Clark.Aug 4, 2015</p>
+                            <p>In a move to address mounting concerns about security on Android, Google and Samsung are
+                                now issuing.</p>
                             <div>
-                                <i class="far fa-comments fa-xs"></i>
-                                <a href="#"><span>4</span> Comments</a>
+                                <div>
+                                    <i class="fas fa-share-alt fa-xs"></i>
+                                    <a href="#"><span>424</span> Shares</a>
+                                </div>
+                                <div>
+                                    <i class="far fa-comments fa-xs"></i>
+                                    <a href="#"><span>4</span> Comments</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- sub-header-right -->
-        <div class="col-md-5 sub-header-right">
-            <!-- .sub-header-right-top -->
-            <div class="sub-header-right-top">
-                <div>
+            <!-- sub-header-right -->
+            <div class="col-md-5 sub-header-right">
+                <!-- .sub-header-right-top -->
+                <div class="sub-header-right-top">
                     <div>
-                        <div class="category">
-                            <p>TOP VIEWED</p>
-                        </div>
                         <div>
-                            <h2><a href="#">Alcatel's $180 Idol 3 4.7 is a</a></h2>
-                            <p>Stive Clark.Aug 4, 2015</p>
-                            <p>In a move to address mounting concerns about security on Android...</p>
-                            <div>
-                                <div>
-                                    <i class="fas fa-share-alt fa-xs"></i>
-                                    <a href="#"><span>424</span> Shares</a>
-                                </div>
-                                <div>
-                                    <i class="far fa-comments fa-xs"></i>
-                                    <a href="#"><span>4</span> Comments</a>
-                                </div>
+                            <div class="category">
+                                <p>TOP VIEWED</p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- /.sub-header-right-top -->
-            <!-- .sub-header-right-bottom -->
-            <div class="sub-header-right-bottom">
-                <div>
-                    <div>
-                        <div class="category">
-                            <p>TOP VIEWED</p>
-                        </div>
-                        <div>
-                            <h2><a href="#">Gadget user good news</a></h2>
-                            <p>Stive Clark.Aug 4, 2015</p>
-                            <p>In a move to address mounting concerns about security on Android...</p>
                             <div>
-                                <div>
-                                    <i class="fas fa-share-alt fa-xs"></i>
-                                    <a href="#"><span>424</span> Shares</a>
-                                </div>
-                                <div>
-                                    <i class="far fa-comments fa-xs"></i>
-                                    <a href="#"><span>4</span> Comments</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- /.sub-header-right-bottom -->
-        </div><!-- /.sub-header-right -->
-    </section>
-    <!-- /.sub-header -->
-    <!-- ? divider ? -->
-    <!-- #home-container -->
-    <div class="row" id="home-container">
-        <div class="col-md-8">
-            <!-- #category-mobile -->
-            <div class="row" id="category-mobile">
-                <div class="row">
-                    <a href="#">Mobile</a>
-                    <div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div></div><!-- image -->
-                    </div>
-                    <div class="col-md-6">
-                        <a href="#" class="cat">Mobile</a>
-                        <h2><a href="#">Airbnb launches photo-centric app for iPads and Android tablets.</a></h2>
-                                <p>10Aug- 2015, <span>by:</span> Eric joan</p>
-                                <p>Collaboratively administrat empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after isntalled base benefits. Dramatically visualise customer idrected convergence without revolutionnary ROI.</p>
+                                <h2><a href="#">Alcatel's $180 Idol 3 4.7 is a</a></h2>
+                                <p>Stive Clark.Aug 4, 2015</p>
+                                <p>In a move to address mounting concerns about security on Android...</p>
                                 <div>
                                     <div>
                                         <i class="fas fa-share-alt fa-xs"></i>
@@ -289,22 +225,200 @@
                                         <a href="#"><span>4</span> Comments</a>
                                     </div>
                                 </div>
-                </div>
-                </div>
-            </div><!-- /#category-mobile -->
-        </div>
-        <div class="col-md-4"></div>
-    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.sub-header-right-top -->
+                <!-- .sub-header-right-bottom -->
+                <div class="sub-header-right-bottom">
+                    <div>
+                        <div>
+                            <div class="category">
+                                <p>TOP VIEWED</p>
+                            </div>
+                            <div>
+                                <h2><a href="#">Gadget user good news</a></h2>
+                                <p>Stive Clark.Aug 4, 2015</p>
+                                <p>In a move to address mounting concerns about security on Android...</p>
+                                <div>
+                                    <div>
+                                        <i class="fas fa-share-alt fa-xs"></i>
+                                        <a href="#"><span>424</span> Shares</a>
+                                    </div>
+                                    <div>
+                                        <i class="far fa-comments fa-xs"></i>
+                                        <a href="#"><span>4</span> Comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.sub-header-right-bottom -->
+            </div><!-- /.sub-header-right -->
+        </section>
+        <!-- /.sub-header -->
+        <!-- ? divider ? -->
+        <!-- #home-container -->
+        <div class="row" id="home-container">
+            <div class="col-md-8">
+                <!-- #category-mobile -->
+                <div class="row categories" id="category-one">
+                    <div class="row category-divider">
+                        <a href="#">Mobile</a>
+                        <div class="category-divider-bar">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="row big-card">
+                        <div class="col-md-6">
+                            <div></div><!-- image -->
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" class="cat">Mobile</a>
+                            <h2><a href="#">Airbnb launches photo-centric app for iPads and Android tablets.</a></h2>
+                            <p>10Aug- 2015, <span>by:</span> Eric joan</p>
+                            <p>Collaboratively administrat empowered markets via plug-and-play networks. Dynamically
+                                procrastinate B2C users after isntalled base benefits. Dramatically visualise customer
+                                idrected convergence without revolutionnary ROI.</p>
+                            <div>
+                                <div>
+                                    <i class="fas fa-share-alt fa-xs"></i>
+                                    <a href="#"><span>424</span> Shares</a>
+                                </div>
+                                <div>
+                                    <i class="far fa-comments fa-xs"></i>
+                                    <a href="#"><span>4</span> Comments</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row small-cards">
+                        <div class="row">
+                            <div class="col-md-6 small-cards-1">
+                                <div class="col-md-4">
+                                    <div></div><!-- image -->
+                                </div>
+                                <div class="col-md-8">
+                                    <a href="#" class="cat">Mobile</a>
+                                    <h2><a href="#">Apple launches photo-centric wrist watch for Android</a></h2>
+                                    <p>10Aug- 2015, <span>by:</span> Eric joan</p>
+                                    <div>
+                                        <div>
+                                            <i class="fas fa-share-alt fa-xs"></i>
+                                            <a href="#"><span>424</span> Shares</a>
+                                        </div>
+                                        <div>
+                                            <i class="far fa-comments fa-xs"></i>
+                                            <a href="#"><span>4</span> Comments</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 small-cards-2">
+                                <div class="col-md-4">
+                                    <div></div><!-- image -->
+                                </div>
+                                <div class="col-md-8">
+                                    <a href="#" class="cat">Mobile</a>
+                                    <h2><a href="#">Apple launches photo-centric wrist watch for Android</a></h2>
+                                    <p>10Aug- 2015, <span>by:</span> Eric joan</p>
+                                    <div>
+                                        <div>
+                                            <i class="fas fa-share-alt fa-xs"></i>
+                                            <a href="#"><span>424</span> Shares</a>
+                                        </div>
+                                        <div>
+                                            <i class="far fa-comments fa-xs"></i>
+                                            <a href="#"><span>4</span> Comments</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-</div><!-- /#page -->
+                        <div class="row">
+                            <div class="col-md-6 small-cards-3">
+                                <div class="col-md-4">
+                                    <div></div><!-- image -->
+                                </div>
+                                <div class="col-md-8">
+                                    <a href="#" class="cat">Mobile</a>
+                                    <h2><a href="#">Apple launches photo-centric wrist watch for Android</a></h2>
+                                    <p>10Aug- 2015, <span>by:</span> Eric joan</p>
+                                    <div>
+                                        <div>
+                                            <i class="fas fa-share-alt fa-xs"></i>
+                                            <a href="#"><span>424</span> Shares</a>
+                                        </div>
+                                        <div>
+                                            <i class="far fa-comments fa-xs"></i>
+                                            <a href="#"><span>4</span> Comments</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 small-cards-4">
+                                <div class="col-md-4">
+                                    <div></div><!-- image -->
+                                </div>
+                                <div class="col-md-8">
+                                    <a href="#" class="cat">Mobile</a>
+                                    <h2><a href="#">Apple launches photo-centric wrist watch for Android</a></h2>
+                                    <p>10Aug- 2015, <span>by:</span> Eric joan</p>
+                                    <div>
+                                        <div>
+                                            <i class="fas fa-share-alt fa-xs"></i>
+                                            <a href="#"><span>424</span> Shares</a>
+                                        </div>
+                                        <div>
+                                            <i class="far fa-comments fa-xs"></i>
+                                            <a href="#"><span>4</span> Comments</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div></div>
+                        <a href="#">MORE NEWS <i style="font-size: 0.8rem;" class="fas fa-chevron-double-right fa-xs"></i></a>
+                    </div>
+                </div><!-- /#category-mobile -->
+                <div class="row categories" id="category-two">
+                    <div class="row category-divider">
+                        <a href="#">Tablet Pc</a>
+                        <div class="category-divider-bar">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div><!-- /.home-container --> 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"></script>
-<!-- Personnal JS -->
-<script src="../public/js/script.js"></script>
+    </div><!-- /#page -->
+    <!-- footer -->
+    <footer class="container-fluid">
+            <div class="container"></div>
+            <div class="w-100"></div>
+            <div class="container"></div>
+    </footer><!-- /footer -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- Personnal JS -->
+    <script src="../public/js/script.js"></script>
 </body>
+
 </html>
