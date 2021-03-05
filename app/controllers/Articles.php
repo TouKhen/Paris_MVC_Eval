@@ -3,7 +3,7 @@ ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 /**
- * Class Articles
+ * Class Posts
  * Gère les articles du blog.
  */
 class Articles extends Controller {
@@ -13,11 +13,11 @@ class Articles extends Controller {
     private $postModel;
 
     /**
-     * Articles constructor
+     * Posts constructor
      * Charge le model des articles
      */
     public function __construct() {
-        $this->postModel = $this->loadModel('Mobilier');
+        $this->postModel = $this->loadModel('Article');
     }
 
     /**
@@ -28,7 +28,7 @@ class Articles extends Controller {
         $filters = $this->postModel->findFilters();
 
         $data = [
-            'mobiliers' => $posts,
+            'articles' => $posts,
             'filters' => $filters
         ];
 
@@ -37,7 +37,7 @@ class Articles extends Controller {
             $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
             $data = [
-                'mobiliers' => $posts,
+                'articles' => $posts,
                 'filters' => $filters,
                 'filter' => $_POST['filters']
             ];
@@ -46,20 +46,20 @@ class Articles extends Controller {
                 $filter = $this->postModel->findAllPosts($_POST['filters']);
 
                 $data = [
-                    'mobiliers' => $filter,
+                    'articles' => $filter,
                     'filters' => $filters,
                     'filter' => $_POST['filters']
                 ];
 
-                $this->render('mobiliers/index', $data);
+                $this->render('index', $data);
             } else {
                 die("Something went wrong, please try again!");
             }
 
-            $this->render('mobiliers/index', $data);
+            $this->render('index', $data);
         }
 
-        $this->render('mobiliers/index', $data);
+        $this->render('index', $data);
     }
 
     /**
