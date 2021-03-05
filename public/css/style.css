@@ -935,6 +935,22 @@ header {
 /*
  ? Start of footer
 */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer > div:first-child {
+  width: 1630px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+footer > div:first-child > div:first-child {
+  background: #3a3a3a;
+  height: 2px;
+}
 footer > div:nth-child(2) {
   background-color: #3a3a3a;
   height: 2px;
