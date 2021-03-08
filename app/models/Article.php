@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Class Article
+ * Class Mobilier
  * Gère la logique métier pour les articles
  */
 class Article {
@@ -25,9 +25,9 @@ class Article {
     public function findAllPosts($data) {
         if(!empty($data))
         {
-            $this->db->query('SELECT * FROM mobiliers WHERE type = "'. $data .'" ORDER BY added_at ASC');
+            $this->db->query('SELECT * FROM tbl_articles WHERE type = "'. $data .'" ORDER BY added_at ASC');
             return $this->db->fetchAll();
-        } else $this->db->query('SELECT * FROM mobiliers ORDER BY added_at ASC');
+        } else $this->db->query('SELECT * FROM tbl_articles JOIN tbl_users USING (user_id) ORDER BY `tbl_articles`.`art_created_at` DESC');
 
         return $this->db->fetchAll();
     }

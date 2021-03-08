@@ -25,9 +25,9 @@ class Mobilier {
     public function findAllPosts($data) {
         if(!empty($data))
         {
-            $this->db->query('SELECT * FROM mobiliers WHERE type = "'. $data .'" ORDER BY added_at ASC');
+            $this->db->query('SELECT * FROM tbl_articles WHERE type = "'. $data .'" ORDER BY added_at ASC');
             return $this->db->fetchAll();
-        } else $this->db->query('SELECT * FROM mobiliers ORDER BY added_at ASC');
+        } else $this->db->query('SELECT * FROM tbl_articles ORDER BY added_at ASC');
 
         return $this->db->fetchAll();
     }

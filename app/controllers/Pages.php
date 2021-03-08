@@ -7,19 +7,24 @@ error_reporting(E_ALL);
 	 * Gère les pages statiques
 	 */
 	class Pages extends Controller {
+        private $postModel;
+
 		/**
 		 * Pages constructor.
 		 */
-		public function __construct() {
-			//$this->userModel = $this->model('User');
-		}
+
+        public function __construct() {
+            $this->postModel = $this->loadModel('Article');
+        }
 		
 		/**
 		 * Page Accueil
 		 */
 		public function index() {
+            $posts = $this->postModel->findAllPosts('');
+
 			$data = [
-				'title' => 'Home page'
+				'articles' => $posts
 			];
 			
 			$this->render('index', $data);
